@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-100 text-slate-900 font-sans antialiased;
+  }
+}
+
+/* Print Styles for A4 Math Exams */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 15mm 15mm 15mm 15mm;
+  }
+
+  body {
+    background-color: white !important;
+    color: black !important;
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Prevent page breaks inside questions and tables */
+  .p-3\.5, table, tr {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  header, button, nav {
+    display: none !important;
+  }
+}

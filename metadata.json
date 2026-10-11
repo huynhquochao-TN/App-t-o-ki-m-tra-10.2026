@@ -1,0 +1,6 @@
+{
+  "name": "RA ĐỀ KIỂM TRA AI – CẤP THPT",
+  "description": "Ứng dụng chuyên sâu dành cho giáo viên Toán THPT giúp tạo nhanh đề kiểm tra, ma trận, bản đặc tả và hướng dẫn chấm chuẩn chương trình GDPT 2018.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
